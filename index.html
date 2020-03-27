@@ -22,8 +22,9 @@ role-tables:
 
 <div class="jumbotron">
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        The <b>I</b>ntelligent <b>S</b>oftware and <b>S</b>ecurity Lab  
+         is an inter-disciplinary group that explores <a href="{{ site.base }}/research/">research</a> across software engineering, security and machine learning, from hardware to software applications. Our research is motivated to explain the rationale behind decision making process of machine learning-based techniques in security domains. We are part of the <a href="http://www.cs.utdallas.edu/"> Department of Computer Science </a> Erik Jonsson School of Engineering &amp; Computer Science at the <a href="http://www.utdallas.edu/">University of Texas at Dallas</a>.
+
     </p>
 </div>
 
@@ -31,19 +32,22 @@ role-tables:
     <h2>News</h2>
     <ul class="news list-unstyled">
         {% for post in site.posts limit: site.front_page_news %}
-            {% include news-item.html item=post %}
+        {% include news-item.html item=post %}
         {% endfor %}
-    </ul>
-    {% assign numposts = site.posts | size %}
+            {% assign numposts = site.posts | size %}
     {% if numposts >= 1 %}
+
         <p>
             <span class="fa fa-fw fa-history"></span>
             <a href="{{ site.base }}/blog.html">Older posts&hellip;</a>
         </p>
     {% endif %}
+    </ul>
+
 </section>
 
-<section>
+
+<!-- <section>
     <h2>Research</h2>
     <div class="card-columns">
         {% comment %}
@@ -57,7 +61,7 @@ role-tables:
             {% endif %}
         {% endfor %}
     </div>
-</section>
+</section> -->
 
 <div id="people">
     <h2>People</h2>
