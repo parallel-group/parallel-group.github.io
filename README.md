@@ -1,53 +1,51 @@
-Research Group Web Site Template
+ISSLab Group Web Site Template
 ================================
 
-This is a [Jekyll][]-based Web site intended for research groups. Your group should be able to get up and running with minimal fuss.
 
-<p align="center">
-<img src="screenshot.png" width="387" height="225" alt="screenshot of the template">
-</p>
+This is the [ISSLab Group Web Site](https://isslabs.github.io/), built with [Jekyll][] and [bibble][]. It's based on [research group website template](https://github.com/uwsampa/research-group-web). Thanks to [Sampa](https://sampa.cs.washington.edu) for sharing their amazing work. This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][license].
 
-This project originated at the University of Washington.  You can see the machinery working live at [our site][sampa].
-
-This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][license].
-
-[sampa]: http://sampa.cs.washington.edu/
+[Jekyll]: http://jekyllrb.com/
+[bibble]: https://github.com/sampsyo/bibble/
 [license]: https://creativecommons.org/licenses/by-nc/4.0/
 
 
-Features
+Building
 --------
 
-* Thanks to [Jekyll][], content is just text files. So even faculty should be able to figure it out.
-* Publications list generated from BibTeX.
-* Personnel list. Organize your professors, students, staff, and alumni.
-* Combined news stream and blog posts.
-* Easily extensible navigation bar.
-* Responsive (mobile-ready) design based on [Bootstrap][].
+The requirements for building the site are:
 
-[Bootstrap]: http://getbootstrap.com/
+* [Jekyll][]: run `gem install jekyll`
+* [bibble][]: run `pip install bibble`
+* ssh and rsync, only if you want to deploy directly.
+
+Clone the repo to your own machine: `git clone https://github.com/isslabs/isslabs.github.io.git` `make` compiles the bibliography and the website content to the `_site` directory. To preview the site, run `jekyll serve` and head to http://0.0.0.0:5000 or the url shown in your terminal.
+
+When all the changes have been done copy the content of the ```_site``` folder, change to master branch and replace all the content. I strongly recommend to run a local server to make sure all the changes are in the page. Then you can push your changes in both branches to the repo.
 
 
-Setup
------
 
-1. Install the dependencies. You will need [Python][], [bibble][] (`pip install bibble`), and [Jekyll][] (`gem install jekyll`).
-2. [Fork][] this repository on GitHub.
-3. Clone the fork to your own machine: `git clone git@github.com:yourgroup/research-group-web.git`.
-4. Add an "upstream" remote for the original repository so you can stay abreast of bugfixes: `git remote add upstream git://github.com/uwsampa/research-group-web.git`.
-5. Customize. Start with the `_config.yml` file, where you enter the name of the site and its URL.
-6. Type `make` to build the site and then run `make serve` to view your site.
-7. Keep adding content. See below for instructions for each of the various sections.
-8. Periodically pull from the upstream repository: `git pull upstream master`.
-
-[Python]: https://www.python.org/
-[Fork]: https://github.com/uwsampa/research-group-web/fork
-
+# Maintaining this webpage
+Start with the `_config.yml` file, where you enter the name of the site and its URL. Keep adding content. See below for instructions for each of the various sections.
 
 Publication List
 ----------------
 
 The list of publications is in `bib/pubs.bib`. Typing `make` will generate `pubs.html`, which contains a pretty, sorted HTML-formatted list of papers. The public page, `publications.html`, also has a link to download the original BibTeX.
+
+If you want to add a new publication to the page just copy the paper/journal bibtex content into ```bib/pubs.bib```. Jekyll and Jekyll-scholar will do all the magic and will generate a new entry. 
+
+However, there are some important things to check before pushing your changes:  
+1. New publications bibtex key must be meaninfull, we recommend to use: 
+```
+<firstLastnameOfFirstAuthor><Year><toolName|confName|journalName|meaningfulWor>
+---
+linan2018rip
+linares2017cel
+rodriguez2018mutode
+```
+2. If the bibtex has the keyworks tag and its content its to long its better to remove it because bibtex link in webpage generates a div whose height is based on the number of lines of the bibtex, if the keywords are too long the layout breaks.
+
+The filter over the publications is done in the ```publications.html``` file. In case you want to change something.
 
 
 News Items and Blog Posts
@@ -76,6 +74,32 @@ You can also customize the icon that is displayed on the news feed. By default i
 [yfm]: http://jekyllrb.com/docs/frontmatter/
 [fa]: http://fontawesome.io/icons/
 
+News can be found in ```_posts``` folder. Everytime you create a news the file must be called like 
+```
+<year>-<month>-<day>-<newsID>.md
+```
+And its content should be something like this:
+```
+---
+layout: post
+title: "ACM SIGSOFT Distinguished Paper Award"
+icon: trophy
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/300px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png
+shortnews: true
+---
+
+Mario Linares-Vásquez received an ACM DPA for his paper "Automatically Assessing Code Understandability: How Far Are We?", in Proceedings of 32nd IEEE/ACM International Conference on Automated Software Engineering (ASE'17), Urbana-Champaign, Illinois, USA, October 30 - November 3, 2017
+```
+
+Depending on the type of news the icon can be:
+| Type of news | icon key |
+|:---:|:---:|
+| New published paper | newspaper-o |
+| Award | trophy |
+| Talk | slideshare |
+
+The amount of news that are shown in the index is defined in the ```_config.yml``` using the key ```front_page_news```.
+
 Projects
 --------
 
@@ -86,40 +110,78 @@ To create a project, just create a markdown file in the `_projects` folder. Here
 - `description:` The text shown in the project card. It supports markdown.
 - `people:` The people working on the project. This is a list of keys from the `_data/people.yml` file.
 - `layout: project` This sets the layout of the actual project page. It should be set to `project`.
-- `image:` The URL of an image for the project. This is shown on both the project page and the project card. Optional.
+- `image:` The URL of an image for the project. This is shown on both th eproject page and the project card. Optional.
 - `last-updated:` Date in the format of `YYYY-MM-DD`. The project cards are sorted by this, most recent first.
 - `status: inactive` Set this to `inactive` if don't want the project to appear on the front page. Just ignore it otherwise.
 - `link:` Set this to an external URL if this project has a page somewhere else on the web. If you don't have a `link:`, then the content of this markdown file (below the YAML frontmatter) will be this project's page.
 - `no-link: true` Set this if you just don't want a project page for your project.
 
-Personnel
+
+
+Example
+---
+```
+title: "Mutation Testing"
+description: Mutation Testing is a type of software testing where we mutate (change) certain statements in the source code and check if the test cases are able to find the errors. It is a type of White Box Testing which is mainly used for Unit Testing. The changes in mutant program are kept extremely small, so it does not affect the overall objective of the program. In this moment, we have open projects in NodeJS and Android Framework
+
+
+people:
+  - marioLinares
+  - camiloEscobar
+  - diegoRodriguez
+  - collGabrieleBavota
+  - collMassimiliano
+  - collDenysPosh
+
+layout: project
+image: /img/project-images/mutation.png
+---
+```
+People
 ---------
 
-People are listed in a [YAML][] file in `_data/people.yml`. You can list the name, link, bio, and role of each person. Roles (e.g., "Faculty", "Staff", and "Students") are defined in `_config.yml`.
+People is modified in the ```_data/people.yml```. We have 5 posible roles in our research lab:
 
-[YAML]: https://en.wikipedia.org/wiki/YAML
+| Role | Who has this role |
+|---|---|
+| faculty | Professors |
+| grad | Ph.D. and M.S. students |
+| ugrad | Undergraduate students |
+| collab | External Collaborators |
+| alum | Past students of ISSLab |
+
+when a person is added to the ```people.yml``` file it must follow the following template:
+
+```
+<id>:
+    display_name: "<fullName>"
+    role: "<role>"
+    image: "/img/people/<imageName>.jpg"
+    webpage: "<personalPageURL>"
+    bio: "<description Of Current position>"
+```
+
+Is important to see that if a person do not have a personal page that tag must be ommited. Also, alumni dont use either webpage or bio tag.
 
 
-Building
---------
+Known Issues
+------------
 
-The requirements for building the site are:
-
-* [Jekyll][]: run `gem install jekyll`
-* [bibble][]: available on `pip`
-* ssh and rsync, only if you want to deploy directly.
-
-`make` compiles the bibliography and the website content to the `_site`
-directory. To preview the site, run `jekyll serve`` and head to
-http://0.0.0.0:5000.
-
+The project uses a custom Python tool to build the BibTeX publication list. As a work around we could generate the publication list locally using `Make` and push the new generated `pubs.html` to update the page. 
 
 Deploying to Your Sever
 -----------------------
 
-To set up deployments, edit the Makefile and look for the lines where `HOST` and `DIR` are defined. Change these to the host where your HTML files should be copied to.
+The website is deployed automatically by [GitHub pages](https://pages.github.com/).
+
+To set up deployments on other services, edit the Makefile and look for the lines where `HOST` and `DIR` are defined. Change these to the host where your HTML files should be copied to.
 
 To upload a new version of the site via rsync over ssh, type `make deploy`. A web hook does this automatically when you push to GitHub. Be aware that the Makefile is configured to have rsync delete stray files from the destination directory.
 
 [Jekyll]: http://jekyllrb.com/
 [bibble]: https://github.com/sampsyo/bibble/
+
+References
+----------
+- [Imagine - readme](https://github.com/john-guerra/imagine)
+- [Software Design Lab - readme]([https://github.com/TheSoftwareDesignLab/thesoftwaredesignlab.github.io](https://github.com/TheSoftwareDesignLab/thesoftwaredesignlab.github.io))

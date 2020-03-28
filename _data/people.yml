@@ -2,19 +2,12 @@
 wei:
     display_name: "Dr. Wei Yang"
     webpage: "http://youngwei.com/"
-    # github: profx
     role: faculty
     image: /img/people/yang-wei.jpg
     bio: Professor
 
-# prof-b:
-#     display_name: "Prof B"
-#     role: faculty
 
-# prof-c:
-#     display_name: "Prof C"
-#     role: faculty
-
+## faculty template
 # profx:
 #     display_name: "Professor X"
 #     webpage: "http://en.wikipedia.org/wiki/Professor_X"
@@ -23,18 +16,7 @@ wei:
 #     image: /img/people/prof-x.png
 #     bio: Professor
 
-# scott:
-#     display_name: "Scott Summers"
-#     webpage: "http://en.wikipedia.org/wiki/Cyclops_(comics)"
-#     role: staff
-#     image: /img/people/scott.png
-#     bio: aka Cyclops
-
-# wolverine:
-#     display_name: "Wolverine"
-#     webpage: "http://en.wikipedia.org/wiki/Wolverine_%28comics%29"
-#     github: wolverine
-#     role: postdoc
+## Students 
 
 mirazul:
     display_name: "Mirazul Haque"
@@ -73,7 +55,7 @@ zihe:
 
 kaiyuan:
     display_name: "Kaiyuan Zhang"
-    webpage: ""
+    webpage: "https://kyzhang.me/"
     bio: M.S.
     role: grad
     image: /img/people/kaiyuanzhang.jpeg
@@ -99,17 +81,14 @@ soumil:
     role: grad
     image: /img/people/soumil-profile.jpeg
 
-# add new students like this
+## new students template
 
 # grad-h:
 #     display_name: "Grad H"
 #     role: grad
 
-# grad-i:
-#     display_name: "Grad I"
-#     role: grad
 
-## add alumni like this
+## alumni template
 
 # alum-a:
 #     display_name: "Alum A"
@@ -125,51 +104,18 @@ soumil:
 #     role: alum
 #     webpage: "https://www.google.com"
 
-# alum-d:
-#     display_name: "Alum D"
-#     role: alum
 
-# alum-e:
-#     display_name: "Alum E"
-#     role: alum
-
-# alum-f:
-#     display_name: "Alum F"
-#     role: alum
-
-# alum-g:
-#     display_name: "Alum G"
-#     role: alum
-
-# alum-h:
-#     display_name: "Alum H"
-#     role: alum
-
-# alum-i:
-#     display_name: "Alum I"
-#     role: alum
-
-## add collabprators like this
+## collaborators template
 
 # collab-a:
 #     display_name: "Collaborator A"
 #     role: collab
 
-# collab-b:
-#     display_name: "Collaborator B With Long Name"
-#     role: collab
-
-# collab-c:
-#     display_name: "Collaborator C"
-#     role: collab
-
-# collab-d:
-#     display_name: "Collaborator D"
-#     role: collab
-
 # collab-e:
 #     display_name: "Collaborator E"
 #     role: collab
+
+## ugrad students template
 
 # ugrad-a:
 #     display_name: "Ugrad A"
