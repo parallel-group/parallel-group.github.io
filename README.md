@@ -1,12 +1,5 @@
-ISSLab Group Web Site Template
+Group Web Site Template
 ================================
-
-
-This is the [ISSLab Group Web Site](https://isslabs.github.io/), built with [Jekyll][] and [bibble][]. It's based on [research group website template](https://github.com/uwsampa/research-group-web). Thanks to [Sampa](https://sampa.cs.washington.edu) for sharing their amazing work. This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License][license].
-
-[Jekyll]: http://jekyllrb.com/
-[bibble]: https://github.com/sampsyo/bibble/
-[license]: https://creativecommons.org/licenses/by-nc/4.0/
 
 
 Building
