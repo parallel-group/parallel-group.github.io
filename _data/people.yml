@@ -1,10 +1,10 @@
 
-wei:
-    display_name: "Dr. Wei Yang"
-    webpage: "http://youngwei.com/"
+peng:
+    display_name: "Peng Jiang"
+    webpage: "https://pengjiang-hpc.github.io/"
     role: faculty
-    image: /img/people/yang-wei.jpg
-    bio: Professor
+    image: /img/people/pengjiang.png
+    bio: Assistant Professor
 
 
 ## faculty template
@@ -18,68 +18,13 @@ wei:
 
 ## Students 
 
-mirazul:
-    display_name: "Mirazul Haque"
-    webpage: ""
-    bio: Ph.D.
-    role: grad
-    image: /img/people/mirazulhaque.jpg
 
-xiaodi:
-    display_name: "Xiaodi Li"
-    webpage: "http://xiaodili.org/"
-    bio: Ph.D.
-    role: grad
-    image: /img/people/xiaodili.jpg
-
-simin:
-    display_name: "Simin Chen"
-    webpage: "http://www.chensimin.site/"
-    bio: Ph.D.
-    role: grad
-    image: /img/people/chensimin.jpg
-
-wasif:
-    display_name: "Wasif Haque"
-    webpage: "https://wasifarmanhaque.github.io/"
-    bio: Ph.D.
-    role: grad
-    image: /img/people/wasif.png
-
-zihe:
-    display_name: "Zihe Song"
-    webpage: "https://zihesong.github.io/"
-    bio: Ph.D.
-    role: grad
-    image: /img/people/ziheSong.jpg
-
-kaiyuan:
-    display_name: "Kaiyuan Zhang"
-    webpage: "https://kyzhang.me/"
-    bio: M.S.
-    role: grad
-    image: /img/people/kaiyuanzhang.jpeg
-
-anki:
-    display_name: "Anki Chauhan"
-    webpage: "http://ankichauhan.com/"
-    bio: M.S.
-    role: grad
-    image: /img/people/ankichauhan.webp
-    
-sampath:
-    display_name: "Sampath Grandhi"
-    webpage: "https://gsk12.github.io/"
-    bio: M.S.
-    role: grad
-    image: /img/people/sampathg.jpg
-
-soumil:
-    display_name: "Soumil Mandal"
-    webpage: "https://soumandal.github.io/"
-    bio: M.S.
-    role: grad
-    image: /img/people/soumil-profile.jpeg
+# soumil:
+#     display_name: "Soumil Mandal"
+#     webpage: "https://soumandal.github.io/"
+#     bio: M.S.
+#     role: grad
+#     image: /img/people/soumil-profile.jpeg
 
 ## new students template
 
