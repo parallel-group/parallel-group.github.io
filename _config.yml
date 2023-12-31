@@ -1,5 +1,5 @@
-name: ISSLab
-url: http://isslabs.github.io
+name: Scalable Learning Systems Lab
+url: http://slrslab.github.io
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
