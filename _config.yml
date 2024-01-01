@@ -1,5 +1,5 @@
-name: Scalable Learning Systems Lab
-url: http://slrslab.github.io
+name: Scalable and Intelligent Data-Intensive Systems Lab
+url: http://sid-is.github.io
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
