@@ -1,5 +1,5 @@
 ---
-title: SparseDNN
+title: Sparse Neural Networks
 
 description: 
   fine-grain structures in sparse neural networks. 
