@@ -1,8 +1,8 @@
 ---
-title: Large-scale Graph-based Machine Learning 
+title: GML
 
 description: 
-  investigating ...
+  graph neural networks, knowledge graph embedding. 
   
 people:
   - simin
