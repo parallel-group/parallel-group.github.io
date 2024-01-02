@@ -1,8 +1,8 @@
 ---
-title: Graph Pattern Mining
+title: GPM
 
 description: |
- - Ibb
+ -  graph pattern mining
 
 people:
   - mirazul
