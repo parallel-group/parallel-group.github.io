@@ -2,7 +2,7 @@
 title: Graph Pattern Mining
 
 description: |
-.....
+adsf
 
 people:
   - mirazul
