@@ -1,9 +1,9 @@
 ---
-title: DENAS
+title: Large-scale Graph-based Machine Learning 
 
 description: 
-  DENAS is a rule generation approach to extract knowledge from DNN-based software.
-
+  investigating ...
+  
 people:
   - simin
   - xiaodi
