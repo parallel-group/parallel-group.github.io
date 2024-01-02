@@ -1,4 +1,4 @@
-
+        {% if post.shortnews %}
 {% assign item = include.item %}
 {% if item.icon %}
 {% assign icon = item.icon %}
@@ -9,9 +9,7 @@
 
 {% capture news %}
     <div>
-        {% if post.shortnews %}
             {{ post.content | markdownify | remove: '<p>' | remove: '</p>' }}
-        {% endif %}
     </div>
 {% endcapture %}
 
@@ -47,3 +45,4 @@
         {{ news }}
     {% endif %}
 </li>
+        {% endif %}
