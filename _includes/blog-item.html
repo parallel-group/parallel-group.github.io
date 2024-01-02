@@ -1,4 +1,4 @@
-
+        {% if post.shortnews == false %}
 {% assign item = include.item %}
 {% if item.icon %}
 {% assign icon = item.icon %}
@@ -9,12 +9,10 @@
 
 {% capture news %}
     <div>
-        {% if post.shortnews == false %}
             <h5> <a href="{{ site.base }}{{ post.url }}"> {{ post.title }} </a> </h5>
             {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
             <br>
             <a href="{{ site.base }}{{ post.url }}"> Read more &raquo;</a>
-        {% endif %}
     </div>
 {% endcapture %}
 
@@ -50,3 +48,4 @@
         {{ news }}
     {% endif %}
 </li>
+        {% endif %}
