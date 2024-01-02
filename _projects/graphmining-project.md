@@ -1,5 +1,5 @@
 ---
-title: GPM
+title: Graph Pattern Mining
 
 description: |
  -  graph pattern mining
