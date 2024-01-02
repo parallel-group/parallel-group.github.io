@@ -2,7 +2,7 @@
 title: Graph Pattern Mining
 
 description: |
-adsf
+ - Ibb
 
 people:
   - mirazul
