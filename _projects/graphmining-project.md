@@ -1,8 +1,8 @@
 ---
-title: ILFO
+title: Graph Pattern Mining
 
 description: |
-  Investigating the robustness of neural networks against energy-oriented attacks. ILFO is Adversarial Attack on Adaptive Neural Networks
+.....
 
 people:
   - mirazul
