@@ -2,16 +2,12 @@
 title: Data Compression
 
 description: 
-  lossy data compression on AI accelerators. 
+  exploring lossy data compression algorithms on AI accelerators. 
 
   
 people:
   - shihui
-
-
-<!--- image: /img/project-images/denas.png --->
-layout: project
-<!--- last-updated: 2020-03-27 --->
+    
 ---
 
 <!---
