@@ -45,10 +45,15 @@ lihhu:
 
 ## alumni template
 
-# alum-a:
-#     display_name: "Alum A"
-#     role: alum
-#     bio: "Ph.D., 2013. Now at Microsoft Research."
+rumi:
+    display_name: "Masuma Rumi"
+    role: alum
+    bio: "MCS, 2021. Now an application developer at the University of Iowa College of Public Health."
+
+linfhe:
+    display_name: "Linfeng He"
+    role: alum
+    bio: "MCS, 2022. Now a Ph.D. candidate at Rutgers."
 
 # alum-b:
 #     display_name: "Alum B With Way Longer Name"
@@ -62,13 +67,16 @@ lihhu:
 
 ## collaborators template
 
-# collab-a:
-#     display_name: "Collaborator A"
-#     role: collab
+rujia:
+    display_name: "Rujia Wang"
+    role: collab
+    webpage: "https://rujiawang.github.io/"
 
-# collab-e:
-#     display_name: "Collaborator E"
-#     role: collab
+shengdi:
+    display_name: "Sheng Di"
+    role: collab
+    webpage: "https://www.anl.gov/profile/sheng-di"
+
 
 ## ugrad students template
 
