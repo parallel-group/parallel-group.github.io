@@ -21,17 +21,20 @@ peng:
 ywei:
     display_name: "Yihua Wei"
     webpage: "https://yihuawei.github.io/"
+    bio: PhD
     role: grad
     image: /img/people/yihuawei.jpeg
 ssong10:
     display_name: "Shihui Song"
     webpage: "https://songshsongsh.github.io/"
+    bio: PhD
     role: grad
     image: /img/people/shihui.jpg
 
 lihhu:
     display_name: "Lihan Hu"
     webpage: "https://hulihan-start.github.io/"
+    bio: PhD
     role: grad
     image: /img/people/lihanhu.jpg
 
