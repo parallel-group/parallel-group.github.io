@@ -7,7 +7,7 @@ description:
 people:
   - lihhu
 
-image: /img/project-images/transr_computation_graph.pdf
+image: /img/project-images/transr_computation_graph.jpeg
 layout: project
 
 ---
