@@ -1,8 +1,8 @@
 ---
 title: Graph Pattern Mining
 
-description: |
- -  graph pattern mining
+description:
+    combinatorial method for graph pattern mining
 
 people:
   - ywei
