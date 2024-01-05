@@ -6,7 +6,6 @@ description:
   
 people:
   - ssong10
-  - lihhu
 
 ---
 
