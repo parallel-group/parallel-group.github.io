@@ -2,7 +2,7 @@
 title: Graph Pattern Mining
 
 description:
-  Accelerating graph pattern mining task through algorithm design, system-level optimization and using new hardwares. 
+  Accelerating graph pattern mining tasks through algorithm design, system-level optimization, and using new hardware.
 
 people:
   - ywei
