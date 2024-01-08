@@ -15,7 +15,7 @@ Graph mining tasks retrieve information from graph-structured data. It includes 
 
 As the problem is NP-hard, it always becomes a performance bottleneck in these areas particularly when dealing with extremely large graph datasets. For example, the frequent subgraph mining task can take more than 20 hours on a small Mico graph(0.1M nodes, 1.1M edges) and several days on larger graphs. Due to that, extensive research has been dedicated to developing efficient graph mining algorithms and systems over many years. Due to the irregular characteristics of graph data structure, it is hard to efficiently deploy graph mining tasks on various hardware(CPU, GPU, AI accelerator, etc). Our laboratory is committed to developing a cutting-edge graph mining system that sets the global benchmark for performance.
 
-Graph mining is widely used in various areas like social network analysis, cybersecurity, bioinformatics, chemoinformatics, protein function prediction, etc. It acts as a key building block in these areas and facilitates scientific research significantly.
+Graph mining is widely used in various areas like social network analysis, cybersecurity, bioinformatics, chemoinformatics, protein function prediction, etc. It acts as a key building block in these areas so an efficient graph mining system can significantly facilitate scientific research.
 
 Selected Publications:
 - SampleMine: A Framework for Applying Random Sampling to Subgraph Pattern Mining through Loop Perforation
