@@ -7,7 +7,7 @@ description:
 people:
   - ywei
 
-image: /img/project-images/gpm.jpg
+image: /img/project-images/gpm.png
 layout: project
 ---
 
@@ -18,10 +18,10 @@ As the problem is NP-hard, it always becomes a performance bottleneck in these a
 Graph mining is widely used in various areas like social network analysis, cybersecurity, bioinformatics, chemoinformatics, protein function prediction, etc. It acts as a key building block in these areas and facilitates scientific research significantly.
 
 Selected Publications:
-SampleMine: A Framework for Applying Random Sampling to Subgraph Pattern Mining through Loop Perforation
-STMatch: Accelerating Graph Pattern Matching on GPU with Stack-Based Loop Optimizations.
+- SampleMine: A Framework for Applying Random Sampling to Subgraph Pattern Mining through Loop Perforation
+- STMatch: Accelerating Graph Pattern Matching on GPU with Stack-Based Loop Optimizations.
 
-SampleMine proposes a two-vertex join and sampling algorithm to accelerate frequent subgraph mining and subgraph counting. 
-STMatch proposes two-level work stealing and loops unrolling on a stack data structure to solve the load imbalance and warp underutilization problem previously existing on GPU. 
-
+SampleMine proposes a two-vertex join and sampling algorithm to accelerate frequent subgraph mining and subgraph counting.  <br>
+STMatch proposes two-level work stealing and loops unrolling on a stack data structure to solve the load imbalance and warp underutilization problem previously existing on GPU.  <br>
+ 
 
