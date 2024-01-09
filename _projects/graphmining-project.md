@@ -7,21 +7,16 @@ description:
 people:
   - ywei
 
-image: /img/project-images/gpm.png
 layout: project
 ---
 
-Graph mining tasks retrieve information from graph-structured data. It includes the following tasks: Graph Pattern Matching, Frequent Subgraph Mining, Subgraph Counting, Motif Counting, K-clique Counting, etc. <i>The above figure gives an example</i>. These tasks either find all the subgraphs in the input graph that are isomorphic to a given pattern (Graph Pattern Matching, K-clique Counting) or identify the most frequently appeared patterns throughout the input graph (Frequent Subgraph Mining, Subgraph Counting, Motif Counting). The problem has some variations, like the scenarios when the graph is dynamic or temporal.  
+Graph pattern mining (GPM) is widely used in various application domains such as social network analysis, cybersecurity, and bioinformatics for retrieving structural information from graphs. The task is to find subgraphs in a data graph that are identical or similar to a given query pattern pattern. Some representative GPM tasks are *graph pattern matching*, *frequent subgraph mining*, and *motif counting*.
 
-As the problem is NP-hard, it always becomes a performance bottleneck particularly when dealing with extremely large graph datasets. For example, the frequent subgraph mining task can take more than 20 hours on a small graph Mico (0.1M nodes, 1.1M edges) and several days on larger graphs. Due to that, extensive research has been dedicated to developing efficient graph mining algorithms and systems over many years. Due to the irregular characteristics of graph data structure, it is hard to efficiently deploy graph mining tasks on various hardware(CPU, GPU, AI accelerator, etc). Our laboratory is committed to developing a cutting-edge graph mining system that sets the global benchmark for performance.
+![Graph pattern mining examples](/img/project-images/gpm.png)
 
-Graph mining is widely used in various areas like social network analysis, cybersecurity, bioinformatics, chemoinformatics, protein function prediction, etc. It acts as a key building block in these areas so an efficient graph mining system can significantly facilitate scientific research. 
+As an NP-hard problem, GPM is a performance bottleneck of many graph mining applications, particularly when dealing with large datasets. In this project, we aim to develop new algorithms and GPU-accelerated systems for efficient GPM. 
 
-Selected Publications:
-- SampleMine: A Framework for Applying Random Sampling to Subgraph Pattern Mining through Loop Perforation
-- STMatch: Accelerating Graph Pattern Matching on GPU with Stack-Based Loop Optimizations.
-
-SampleMine proposes a two-vertex join and sampling algorithm to accelerate frequent subgraph mining and subgraph counting.  <br>
-STMatch proposes two-level work stealing and loops unrolling on a stack data structure to solve the load imbalance and warp underutilization problem previously existing on GPU.  <br>
+## Current Progress
+In [SampleMine](https://dl.acm.org/doi/10.1145/3559009.3569658), we propose a two-vertex join and sampling algorithm to accelerate frequent subgraph mining and subgraph counting. We also developed a GPU-accelerated graph pattern matching system based on a classic backtracking algorithm with work-stealing and loop-unrolling optimizations ([STMatch](https://dl.acm.org/doi/abs/10.5555/3571885.3571955)). 
  
 
