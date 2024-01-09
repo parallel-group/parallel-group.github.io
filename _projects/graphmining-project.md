@@ -12,7 +12,7 @@ layout: project
 
 Graph pattern mining (GPM) is widely used in various application domains such as social network analysis, cybersecurity, and bioinformatics for retrieving structural information from graphs. The task is to find subgraphs in a data graph that are identical or similar to a given query pattern pattern. Some representative GPM tasks are *graph pattern matching*, *frequent subgraph mining*, and *motif counting*.
 
-![Graph pattern mining examples](/img/project-images/gpm.png)
+![Graph pattern mining examples](/img/project-images/gpm.png =400x)
 
 As an NP-hard problem, GPM is a performance bottleneck of many graph mining applications, particularly when dealing with large datasets. In this project, we aim to develop new algorithms and GPU-accelerated systems for efficient GPM. 
 
