@@ -10,7 +10,7 @@ people:
 layout: project
 ---
 
-Graph pattern mining (GPM) is widely used in various application domains such as social network analysis, cybersecurity, and bioinformatics for retrieving structural information from graphs. The task is to find subgraphs in a data graph that are identical or similar to a given query pattern pattern. Some representative GPM tasks are *graph pattern matching*, *frequent subgraph mining*, and *motif counting*.
+Graph pattern mining (GPM) is widely used in various application domains such as social network analysis, cybersecurity, and bioinformatics for retrieving structural information from graphs. The task is to find subgraphs in a data graph that are identical or similar to a given query pattern pattern. Some representative GPM tasks are graph pattern matching, frequent subgraph mining, and motif counting.
 
 <img src="/img/project-images/gpm.png" alt="Graph pattern mining examples" width="400"/>
 
