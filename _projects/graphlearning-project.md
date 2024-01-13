@@ -9,6 +9,8 @@ people:
 
 layout: project
 
+last-update: 2024-01-13
+
 ---
 Knowledge graphs (KGs) are data structures that store information about different entities and their relations, which are used in a wide array of domains, such as social networks, knowledge bases, and bioinformatics. A common approach to using KGs is to compute knowledge graph embeddings (KGEs), which embed a KG's entities and relation types into a multi-dimensional space to capture the relationships between entities in a knowledge graph. 
 
