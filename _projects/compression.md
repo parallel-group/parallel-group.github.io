@@ -8,6 +8,8 @@ description:
 people:
   - ssong10
 
+layout: project
+
 last-updated: 2024-01-13
     
 ---
