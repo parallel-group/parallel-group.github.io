@@ -4,7 +4,7 @@ shortnews: false
 title: "Shihui attended the FZ workshop at Sarasota, Florida"
 ---
 
-Between February 14th and 15th, Shihui attended the highly anticipated [FZ workshop] in Sarasota, Florida. This workshop offered a general introduction to the FZ project, a discussion about the FZ project's progress so far and the next milestones, and a presentation of 9 application domain requirements including Climate, Seismology, Quantum Circuit, Fusion, Cosmology, Light sources, Molecular Dynamics, Combustion, and System logs. It also discussed FZ module design and results with other compressors and provided Hackathon sessions where multiple existing compression schemes will be tested for every application. The knowledge and networks we built at the workshop will help us improve how we analyze scientific data in various areas of science and how to design more effective error-bounded lossy compressors.
+As a participant of the FZ project with Argonne National Laboratory, Shihui was invited to attend the [FZ workshop] in Sarasota, Florida. The workshop provides an opportunity for computer scientists to meet with domain experts from around the world to discuss the challenges of data compression in various applications, including climate simulation, seismology, quantum computing, cosmology, and more. 
 
 <p align="center">
   <img src="/img/blog-images/FZ_meeting.jpg" alt="My Example Image" title="An example image" width="90%"/>
