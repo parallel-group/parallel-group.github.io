@@ -14,7 +14,7 @@ last-updated: 2024-01-13
 ---
 Knowledge graphs (KGs) are data structures that store information about different entities and their relations, which are used in a wide array of domains, such as social networks, knowledge bases, and bioinformatics. A common approach to using KGs is to compute knowledge graph embeddings (KGEs), which embed a KG's entities and relation types into a multi-dimensional space to capture the relationships between entities in a knowledge graph. 
 
-<img src="/img/project-images/graph learning.png" alt="Graph pattern mining examples" width="700"/>
+<img src="/img/project-images/graph learning.png" alt="Graph pattern mining examples" width="700" style="display: block; margin: 0 auto;"/>
 
 Several systems focused on improving the performance of KGE computation. However, existing systems implement the score functions with separate tensor operations, leading to large memory consumption and poor memory access efficiency. Since large graphs cannot be stored on GPU directly, the embeddings should be placed on CPU memory but computed on GPU, which introduces large communication overhead in data movement through CPU and computational GPU devices.
 
