@@ -38,6 +38,20 @@ lihhu:
     role: grad
     image: /img/people/lihanhu.jpg
 
+ruiychen:
+    display_name: "Ruiying Chen"
+    webpage: "https://idislab.github.io/"
+    bio: PhD
+    role: grad
+    image: /img/people/RuiyingChen.jpg
+
+nuoxu:
+    display_name: "Nuo Xu"
+    webpage: "https://idislab.github.io/"
+    bio: PhD
+    role: grad
+    image: /img/people/NuoXu.jpg
+
 ## new students template
 
 # grad-h:
