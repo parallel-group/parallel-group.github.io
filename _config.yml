@@ -1,5 +1,5 @@
-name: Intelligent Data-Intensive Systems Lab
-url: http://idislab.github.io
+name: Parallel Programming Group
+url: http://parallel-group.github.io
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
